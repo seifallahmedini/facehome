@@ -1,5 +1,7 @@
 import React from "react";
 
+import headerPhoto from "../../Photos/headerphoto/headerphoto.png";
+
 // importing Antd components
 import { Card, Button } from "antd";
 
@@ -39,7 +41,7 @@ export default function GroupHeader() {
                 //   height: " 500px"
               }}
               alt="example"
-              src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+              src={headerPhoto}
             />
           </div>
         }

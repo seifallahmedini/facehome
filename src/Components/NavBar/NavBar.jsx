@@ -3,6 +3,7 @@ import logo from "../../Photos/facebook-white-logo.png";
 import "./NavBar.less";
 
 import SearchComponent from "../SearchComponent/SearchComponent";
+import NavBarMenu from "../NavBarMenu/NavBarMenu";
 
 // importing Antd components
 import { Layout, Input, Menu } from "antd";
@@ -53,6 +54,7 @@ export default function NavBar() {
           style={searchStyle}
         />
       </div>
+      <NavBarMenu />
     </Header>
   );
 }

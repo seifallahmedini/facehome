@@ -1,6 +1,13 @@
 import React from "react";
 import "./RightSideBar.less";
 
+import ghaith from "../../Photos/FriendsPhotos/ghaith.jpg";
+import fedi from "../../Photos/FriendsPhotos/fedi.jpg";
+import amal from "../../Photos/FriendsPhotos/amal.jpg";
+// import ghaith from "../../Photos/FriendsPhotos/ghaith.jpg";
+// import ghaith from "../../Photos/FriendsPhotos/ghaith.jpg";
+// import ghaith from "../../Photos/FriendsPhotos/ghaith.jpg";
+
 import SearchComponent from "../SearchComponent/SearchComponent";
 
 // importing Antd components
@@ -11,46 +18,43 @@ const { Sider } = Layout;
 // List of friends " in the future you can get this list from an api "
 const data = [
   {
-    title: "Ant Design Title 1"
+    title: "Fedi Guesmi",
+    img: fedi
   },
   {
-    title: "Ant Design Title 2"
+    title: "Ghaith",
+    img: ghaith
   },
   {
-    title: "Ant Design Title 3"
+    title: "Bilel Ben Haj Abbes"
   },
   {
-    title: "Ant Design Title 4"
+    title: "Houssem Amiri"
   },
   {
-    title: "Ant Design Title 3"
+    title: "Amal Haddar",
+    img: amal
   },
   {
-    title: "Ant Design Title 4"
+    title: "Salma Ch"
   },
   {
-    title: "Ant Design Title 3"
+    title: "Syrine Riahi"
   },
   {
-    title: "Ant Design Title 4"
+    title: "Jihen Ben Mohamed"
   },
   {
-    title: "Ant Design Title 3"
+    title: "Ahmed Fougali"
   },
   {
-    title: "Ant Design Title 4"
+    title: "Amir Ahmed"
   },
   {
-    title: "Ant Design Title 3"
+    title: "Amir Ahmed"
   },
   {
-    title: "Ant Design Title 4"
-  },
-  {
-    title: "Ant Design Title 3"
-  },
-  {
-    title: "Ant Design Title 4"
+    title: "Amir Ahmed"
   }
 ];
 
@@ -82,7 +86,13 @@ export default function RightSideBar() {
             <List.Item>
               <List.Item.Meta
                 avatar={
-                  <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                  <Avatar
+                    src={
+                      item.img
+                        ? item.img
+                        : "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+                    }
+                  />
                 }
                 title={<a href="https://ant.design">{item.title}</a>}
               />
